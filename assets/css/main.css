@@ -3077,6 +3077,7 @@ section,
 
 @media (max-width: 767px) {
   .team .team-member {
+    height: fit-content;
   }
 
   .team .team-member .member-img {
