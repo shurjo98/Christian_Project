@@ -3006,6 +3006,8 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   border-radius: 8px;
   transition: 0.3s;
+  display: flex;
+  height: 100%;
 }
 
 .team .team-member:hover {
@@ -3028,6 +3030,10 @@ section,
 .team .team-member .member-info {
   padding: 25px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Spreads content: name+roles, paragraph, social */
+  flex-grow: 1;
 }
 
 .team .team-member .member-info h4 {
@@ -3049,6 +3055,7 @@ section,
   font-size: 0.9rem;
   margin-bottom: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+  flex-grow: 1;
 }
 
 .team .team-member .member-info .social {
